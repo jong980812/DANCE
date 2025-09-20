@@ -1,1 +1,2 @@
 static/videos/Camera_demo_Final.mp4 filter=lfs diff=lfs merge=lfs -text
+static/pdfs/_NeurIPS_2025__DANCE_supp.pdf filter=lfs diff=lfs merge=lfs -text
