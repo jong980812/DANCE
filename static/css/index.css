@@ -256,6 +256,10 @@ body {
 .results-carousel {
   overflow: hidden;
   padding: 1rem 0;
+  max-width: 70%;       /* 이미지 폭 80%로 축소 */
+  margin: 0 auto;       /* 중앙 정렬 */
+  display: block;
+  
 }
 
 .results-carousel .item {
