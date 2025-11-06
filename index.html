@@ -345,7 +345,8 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <!-- <div class="column is-four-fifths"> -->
-        <div class="column is-ll">
+        <div class="column is-four-fifths-desktop is-full-tablet">
+        <!-- <div class="column is-ll"> -->
         <h2 class="title is-2 has-text-weight-semibold" style="border-bottom: 3px solid #bca74b; padding-bottom: 0.4rem; margin-bottom: 1rem;">Abstract</h2>
         <div class="content has-text-justified" style="font-size: 1.1rem; color: #222; line-height: 1.75;">
           <!-- TODO: Replace with your paper abstract -->
@@ -366,33 +367,54 @@
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">💡 Motivation</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Effective explanations of video action recognition models should disentangle how movements unfold over time from the surrounding spatial context. 
-            However, existing methods—based on saliency—produce entangled explanations, making it unclear whether predictions rely on motion or spatial context. 
-            Language-based approaches offer structure but often fail to explain motions due to their tacit nature—intuitively understood but difficult to verbalize.
-            To address these challenges, we propose Disentangled Action aNd Context concept-based Explainable (DANCE) video action recognition, a framework that predicts actions through disentangled concept types: motion dynamics, objects, and scenes. 
-            We define motion dynamics concepts as human pose sequences.
-            We employ a large language model to automatically extract object and scene concepts. 
-            Built on an ante-hoc concept bottleneck design, DANCE enforces prediction through these concepts.
-            Experiments on four datasets—KTH, Penn Action, HAA500, and UCF-101—demonstrate that DANCE significantly improves explanation clarity with competitive performance. 
-            We validate the superior interpretability of DANCE through a user study.
-            Experimental results also show that DANCE is beneficial for model debugging, editing, and failure analysis.
-          </p>
+
+
+<!-- Introduction Section -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+
+        <div class="column is-ll">
+          <h2 class="title">Introduction</h2>
+          
+          <!-- 이미지 따로 분리 -->
+<div class="image-wrapper" style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+  <img src="static/images/Figure1-1.png"
+       alt="Disentangled concepts speak louder than words"
+       style="width: 200%; height: auto; max-width: 1200px;">
+</div>
+
+          <!-- 본문 -->
+<div class="content" style="font-size: 1.15rem; color: #222; line-height: 1.9;">
+  <p><strong>🎯 Disentangled concepts speak louder than words.</strong></p>
+  <ul style="list-style-type: none; padding-left: 0; text-align: left;">
+    <li>💡 <em>Spatio-temporal attribution methods</em> often give <strong>unstructured explanations</strong> that are hard for humans to interpret.</li>
+    <li>🎥 For example, in a <em>Baseball Swing</em> video, existing approaches like <strong>3D-saliency</strong> or <strong>VTCD</strong> 
+      fail to reveal whether the model focuses on 
+      <em>motion</em> (e.g., torso twist), 
+      <em>objects</em> (e.g., jersey or helmet), 
+      or the <em>scene</em> (e.g., baseball field).</li>
+    <li>🧠 Language-based explanations offer more structure, but motion remains a form of 
+      <em>tacit knowledge</em> — intuitively understood yet difficult to express verbally.</li>
+    <li>As a result, verbal descriptions of motion often lack clarity and are difficult to interpret.</li>
+  </ul>
+  <div style="margin-left: 2.0rem; margin-top: 0.5rem;">
+    <p></p><br>🚀 In contrast, <strong>DANCE</strong> <em>disentangles</em> motion and context to provide <strong>structured explanations</strong>:</p>
+    <p>🕺 Pose sequences → capture motion dynamics in an <em>appearance-invariant</em> way.</p>
+    <p>🏞️ Object & scene concepts → clearly described through text for intuitive understanding.</p>
+  </div>
+</div>
         </div>
+
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+
+
+
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
